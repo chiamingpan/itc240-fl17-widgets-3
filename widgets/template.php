@@ -1,11 +1,14 @@
 <?php include 'includes/config.php'?>
-<?php include 'includes/header.php'?>
-
-<h3>Home Page </h3>
-<p> Clever stuff about Widgets goes here! </p>
-<p> Clever stuff about Widgets goes here! </p>
-<p> Clever stuff about Widgets goes here! </p>
-<p> Clever stuff about Widgets goes here! </p>
-<p> Clever stuff about Widgets goes here! </p>
-
-<?php include 'includes/footer.php'?>
+<?php get_header()?>
+<h3>Name of page</h3>
+<p>Clever content goes here</p>
+<p>Clever content goes here</p>
+<p>Clever content goes here</p>
+<p>Clever content goes here</p>
+<p>Clever content goes here</p>
+<p>Clever content goes here</p>
+<p>Clever content goes here</p>
+<p>Clever content goes here</p>
+<p>Clever content goes here</p>
+<p>Clever content goes here</p>
+<?php get_header()?>

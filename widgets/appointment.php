@@ -1,5 +1,5 @@
 <?php include 'includes/config.php'?>
-<?php include 'includes/header.php'?>
+<?php get_header()?>
 <?php
 //put client's email address here
 $to      = 'Chia.Pan@seattlecolleges.edu';
@@ -127,7 +127,8 @@ Advanced wheel throwing
 ?>
     <?php 
 
-include 'includes/footer.php';
+get_header();
+
 
 function clean_post($key)
 {

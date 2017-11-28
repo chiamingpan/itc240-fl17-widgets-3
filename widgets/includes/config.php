@@ -47,6 +47,10 @@ switch(THIS_PAGE)
     case 'index.php':
         $config->title = "Home Page-Widgets";
         $config->banner = "Home Banner";
+        $config->loadhead = " ";//place items in <head> element
+        $config->loadfoot = " ";//place to store items just before body tag
+$config->hero = " ";//will store super hero randomly
+        
     
     break;
     

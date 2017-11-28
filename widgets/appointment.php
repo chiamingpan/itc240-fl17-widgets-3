@@ -1,6 +1,20 @@
 <?php include 'includes/config.php'?>
-<?php get_header()?>
 <?php
+$heros[] = '<img src="images/coulson.png" />';
+$heros[] = '<img src="images/fury.png" />';
+$heros[] = '<img src="images/hulk.png" />';
+$heros[] = '<img src="images/thor.png" />';
+$heros[] = '<img src="images/black-widow.png" />';
+$heros[] = '<img src="images/captain-america.png" />';
+$heros[] = '<img src="images/machine.png" />';
+$heros[] = '<img src="images/iron-man.png" />';
+$heros[] = '<img src="images/loki.png" />';
+$heros[] = '<img src="images/giant.png" />';
+$heros[] = '<img src="images/hawkeye.png" />';
+
+$config->hero .= randomize($hero)>
+<?php get_header()?>
+    <?php
 //put client's email address here
 $to      = 'Chia.Pan@seattlecolleges.edu';
 if(isset($_POST["FirstName"])){//show data
@@ -125,7 +139,7 @@ Advanced wheel throwing
 
 
 ?>
-    <?php 
+        <?php 
 
 get_header();
 

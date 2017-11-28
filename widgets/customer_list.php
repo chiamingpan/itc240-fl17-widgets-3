@@ -2,7 +2,7 @@
 //customer_list.php - shows a list of customer data
 ?>
     <?php include 'includes/config.php';?>
-    <?php include 'includes/header.php';?>
+    <?php get_header();?>
     <h1>
         <?=$pageID?>
     </h1>

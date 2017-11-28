@@ -1,8 +1,8 @@
 <?php
 //customer_view.php - shows details of a single customer
 ?>
-<?php include 'includes/config.php';?>
-<?php
+    <?php include 'includes/config.php';?>
+    <?php
 
 //process querystring here
 if(isset($_GET['id']))
@@ -37,11 +37,12 @@ if(mysqli_num_rows($result) > 0)
 }else{//inform there are no records
     $Feedback = '<p>This customer does not exist</p>';
 }
-
 ?>
-<?php include 'includes/header.php';?>
-<h1><?=$pageID?></h1>
-<?php
+        <?php get_header();?>
+        <h1>
+            <?=$pageID?>
+        </h1>
+        <?php
     
     
 if($Feedback == '')
@@ -68,4 +69,4 @@ echo '<p><a href="customer_list.php">Go Back</a></p>';
 @mysqli_close($iConn);
 
 ?>
-<?php include 'includes/footer.php';?>
+            <?php get_footer();?>

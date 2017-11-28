@@ -1,10 +1,12 @@
 <?php
 //customer_list.php - shows a list of customer data
 ?>
-<?php include 'includes/config.php';?>
-<?php include 'includes/header.php';?>
-<h1><?=$pageID?></h1>
-<?php
+    <?php include 'includes/config.php';?>
+    <?php include 'includes/header.php';?>
+    <h1>
+        <?=$pageID?>
+    </h1>
+    <?php
 $sql = "select * from test_Customers";
 //we connect to the db here
 $iConn = mysqli_connect(DB_HOST,DB_USER,DB_PASSWORD,DB_NAME);
@@ -38,4 +40,4 @@ if(mysqli_num_rows($result) > 0)
 @mysqli_close($iConn);
 
 ?>
-<?php include 'includes/footer.php';?>
+        <?php get_footer();?>

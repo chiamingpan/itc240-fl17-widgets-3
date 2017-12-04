@@ -137,13 +137,10 @@ Advanced wheel throwing
   ';  
     
 }
-
-
-
 ?>
         <?php 
 
-get_header();
+get_footer();
 
 
 function clean_post($key)

@@ -47,7 +47,7 @@
               </a>
                     </li>
                     <li class="nav-item px-lg-4">
-                        <a class="nav-link text-uppercase text-expanded" href="customers.php">Customers</a>
+                        <a class="nav-link text-uppercase text-expanded" href="customer_list.php">Customers</a>
                     </li>
                     <li class="nav-item px-lg-4">
                         <a class="nav-link text-uppercase text-expanded" href="appointment.php">Appointment</a>

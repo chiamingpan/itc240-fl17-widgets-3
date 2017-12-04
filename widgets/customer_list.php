@@ -2,7 +2,7 @@
 //customer_list.php - shows a list of customer data
 ?>
     <?php include 'includes/config.php';?>
-    <?php get_header();?>
+    <?php get_header()?>
     <h1>
         <?=$pageID?>
     </h1>
@@ -16,18 +16,21 @@ $result = mysqli_query($iConn,$sql);
 
 if(mysqli_num_rows($result) > 0)
 {//show records
-
+    echo '<table><tr>
+    <th width="10%">First Name</th>
+    <th width="10%">Last Name</th>
+    <th width="10%">E-mail</th></tr>';
+    
     while($row = mysqli_fetch_assoc($result))
     {
-        echo '<p>';
-        echo 'FirstName: <b>' . $row['FirstName'] . '</b> ';
-        echo 'LastName: <b>' . $row['LastName'] . '</b> ';
-        echo 'Email: <b>' . $row['Email'] . '</b> ';
+        echo '<tr>';
+        echo '<td width="10%"><a href="customer_view.php?id=' . $row['CustomerID'] . '">' . $row['FirstName'] . '</a></td>';
+        echo '<td width="10%">'. $row['LastName'] . '</td>';
+        echo '<td width="10%">'. $row['Email'] . '</td>';
+        echo '</tr>';
         
-        echo '<a href="customer_view.php?id=' . $row['CustomerID'] . '">' . $row['FirstName'] . '</a>';
-        
-        echo '</p>';
     }    
+    echo '</table>';
 
 }else{//inform there are no records
     echo '<p>There are currently no customers</p>';

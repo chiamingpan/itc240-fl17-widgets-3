@@ -29,6 +29,8 @@ if(mysqli_num_rows($result) > 0)
         $FirstName = stripslashes($row['FirstName']);
         $LastName = stripslashes($row['LastName']);
         $Email = stripslashes($row['Email']);
+        $Job = stripslashes($row['Job']);
+        $Phone = stripslashes($row['Phone']);
         $title = "Title Page for " . $FirstName;
         $pageID = $FirstName;
         $Feedback = '';//no feedback necessary
@@ -44,29 +46,24 @@ if(mysqli_num_rows($result) > 0)
         </h1>
         <?php
     
-    
-if($Feedback == '')
-{//data exists, show it
-
-    echo '<p>';
-    echo 'FirstName: <b>' . $FirstName . '</b> ';
-    echo 'LastName: <b>' . $LastName . '</b> ';
-    echo 'Email: <b>' . $Email . '</b> ';
-    
-    echo '<img src="uploads/customer' . $id . '.jpg" />';
-    
-    echo '</p>'; 
-}else{//warn user no data
-    echo $Feedback;
-}    
-
-echo '<p><a href="customer_list.php">Go Back</a></p>';
-
-//release web server resources
-@mysqli_free_result($result);
-
-//close connection to mysql
-@mysqli_close($iConn);
-
+        if($Feedback == '') {//data exists, show it 
+        echo '<p>'; 
+        echo '<img src="uploads/customer' . $id . '.jpg" /> </br>'; 
+        echo 'FirstName: <b>' . $FirstName . '</b> </br>'; 
+        echo 'LastName: <b>' . $LastName . '</b> </br>'; 
+        echo 'Email: <b>' . $Email . '</b> </br>'; 
+        echo 'Job: <b>' . $Job . '</b> </br>';
+        echo 'Phone: <b>' . $Phone . '</b> </br> '; 
+        echo '</p>'; 
+        
+        }else{//warn user no data 
+            echo $Feedback; } 
+        echo '<p><a href="customer_list.php">Go Back</a></p>'; 
+        //release web server resources
+        @mysqli_free_result($result); 
+        
+        //close connection to mysql
+        @mysqli_close($iConn); 
 ?>
+
             <?php get_footer();?>

@@ -1,7 +1,7 @@
 <?php include 'includes/config.php'?>
 <?php get_header()?>
 
-<h3> Customers </h3>
+<h3> Customers List </h3>
 <?php
 $sql = "select * from test_Customers";
 
@@ -14,7 +14,7 @@ if (mysqli_num_rows($result) > 0)//at least one record!
 	   echo "<p>";
 	   echo "FirstName: <b>" . $row['FirstName'] . "</b><br />";
 	   echo "LastName: <b>" . $row['LastName'] . "</b><br />";
-	   echo "Email: <b>" . $row['Email'] . "</b><br />";
+	   //echo "Email: <b>" . $row['Email'] . "</b><br />";
 	   echo "</p>";
     }
 }else{//no records

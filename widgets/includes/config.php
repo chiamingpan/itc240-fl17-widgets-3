@@ -40,39 +40,38 @@ $config->theme = 'BusinessCasual';//sub folder to themes
 //Web page defaults
 $config->title = THIS_PAGE;
 $config->banner = 'Widgets';
+$config->loadhead = '';//place items in <head> element
+$config->loadfoot = '';//place to store items just before body tag
+$config->hero = '';//will store random superhero icons
+$config->planet = '';//will store random superhero icons
 
 
 switch(THIS_PAGE)
 {        
     case 'index.php':
-        $config->title = "Home Page-Widgets";
-        $config->banner = "Home Banner";
-        $config->loadhead = " ";//place items in <head> element
-        $config->loadfoot = " ";//place to store items just before body tag
-$config->hero = " ";//will store super hero randomly
-        
-    
+        $config->title = 'Home Page';
+        $config->banner = 'Home Page Banner';
     break;
     
     case 'customers.php':
-        $config->title = "Customers Page-Widgets";
-        $config->banner = "Customers Banner";
+        $config->title = 'Customers Page';
+        $config->banner = 'Customers Banner';
       
     break;
     
     case 'appointment.php':
-        $config->title = "Appointment Page-Widgets";
-        $config->banner = "Appointment Banner";
+        $config->title = 'Appointment Page';
+        $config->banner = 'Appointment Banner';
     break;
         
     case 'daily.php':
-        $config->title = "Daily Page-Widgets";
-        $config->banner = "Daily Banner";
+        $config->title = 'Daily Page';
+        $config->banner = 'Daily Banner';
     break;
         
     case 'contact.php':
-        $config->title = "Widgets Contact Page";
-        $config->banner = "Contact Banner";
+        $config->title = 'Contact Page';
+        $config->banner = 'Contact Banner';
     break;
 }
 

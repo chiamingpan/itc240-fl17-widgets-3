@@ -1,4 +1,5 @@
 <?php include 'includes/config.php'?>
+
 <?php
 $heros[] = '<img src="images/coulson.png" />';
 $heros[] = '<img src="images/fury.png" />';
@@ -11,9 +12,10 @@ $heros[] = '<img src="images/iron-man.png" />';
 $heros[] = '<img src="images/loki.png" />';
 $heros[] = '<img src="images/giant.png" />';
 $heros[] = '<img src="images/hawkeye.png" />';
+$config->hero = randomize($heros);
+?>
 
-$config->hero .= randomize($hero)>
-<?php get_header()?>
+    <?php get_header()?>
     <?php
 //put client's email address here
 $to      = 'Chia.Pan@seattlecolleges.edu';

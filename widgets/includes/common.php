@@ -50,6 +50,7 @@ function get_footer()
     get_header();
 }#get_footer() is same function, run second time with footer file
 
+
 /**
  * Wrapper function for processing data pulled from db
  *

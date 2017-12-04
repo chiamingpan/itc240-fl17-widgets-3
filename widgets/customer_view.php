@@ -58,7 +58,7 @@ if(mysqli_num_rows($result) > 0)
         
         }else{//warn user no data 
             echo $Feedback; } 
-        echo '<p><a href="customer_list.php">Go Back</a></p>'; 
+        echo '<p><a href="customer_list_pager.php">Go Back</a></p>'; 
         //release web server resources
         @mysqli_free_result($result); 
         

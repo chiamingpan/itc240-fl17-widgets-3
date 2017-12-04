@@ -53,7 +53,7 @@ switch(THIS_PAGE)
         $config->banner = 'Home Page Banner';
     break;
     
-    case 'customer_list.php':
+    case 'customer_list_pager.php':
         $config->title = 'Customers Page';
         $config->banner = 'Customer List Banner';
       

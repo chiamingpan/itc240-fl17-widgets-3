@@ -70,6 +70,7 @@ if(mysqli_num_rows($result) > 0)
         echo '<td width="10%"><a href="customer_view.php?id=' . $row['CustomerID'] . '">' . $row['FirstName'] . '</a></td>';
         echo '<td width="10%">'. $row['LastName'] . '</td>';
         echo '<td width="10%">'. $row['Email'] . '</td>';
+        echo '<td width="10%"><img src="' . $config->virtual_path . 'uploads/customer' . dbOut($row['CustomerID']) . '_thumb.jpg" /></td>';
         echo '</tr>';
         
     }    
